@@ -1,0 +1,30 @@
+{
+  "name": "summertime",
+  "version": "1.0.0",
+  "description": "cli 工具",
+  "main": "lib/index.js",
+  "module": "lib/index.esm.js",
+  "repository": "git@github.com:bajiu/summertime.git",
+  "author": "bajiu0819@163.com",
+  "license": "MIT",
+  "scripts": {
+    "api": "api-extractor run",
+    "build": "rollup --c rollup.config.ts"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/preset-env": "^7.14.7",
+    "@microsoft/api-extractor": "^7.16.1",
+    "@types/node": "^15.12.4",
+    "@typescript-eslint/eslint-plugin": "^4.28.0",
+    "@typescript-eslint/parser": "^4.28.0",
+    "eslint": "^7.29.0",
+    "rollup": "^2.52.3",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-eslint": "^7.0.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-typescript2": "^0.30.0",
+    "typescript": "^4.3.4"
+  }
+}
