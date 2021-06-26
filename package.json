@@ -8,8 +8,8 @@
   "author": "bajiu0819@163.com",
   "license": "MIT",
   "scripts": {
-    "api": "api-extractor run",
-    "build": "gulp build"
+    "build": "gulp build",
+    "lint": "eslint --ext .js,.ts -f ./node_modules/eslint-friendly-formatter --fix src"
   },
   "devDependencies": {
     "@babel/core": "^7.14.6",
@@ -32,5 +32,14 @@
     "rollup-plugin-typescript2": "^0.30.0",
     "ts-node": "^10.0.0",
     "typescript": "^4.3.4"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,ts}": [
+      "yarn lint",
+      "git add"
+    ]
   }
 }
