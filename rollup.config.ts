@@ -1,5 +1,5 @@
 // import path from 'path'
-// import { RollupOptions } from 'rollup'
+import { RollupOptions } from 'rollup'
 const path = require('path');
 import rollupTypescript from 'rollup-plugin-typescript2'
 import babel from 'rollup-plugin-babel'
@@ -17,7 +17,7 @@ const paths = {
 }
 
 // rollup 配置项
-const rollupConfig = {
+const rollupConfig: RollupOptions = {
   input: paths.input,
   output: [
     // 输出 commonjs 规范的代码
