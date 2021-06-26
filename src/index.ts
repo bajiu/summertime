@@ -1,6 +1,5 @@
 console.log('run this');
 
-// : number
-export const add = () => {
+export const add: number = () null=> {
   return 0.2 + 0.3
 }
