@@ -41,5 +41,8 @@
       "yarn lint",
       "git add"
     ]
+  },
+  "dependencies": {
+    "lint-staged": "^11.0.0"
   }
 }
