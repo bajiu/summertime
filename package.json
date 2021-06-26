@@ -25,6 +25,8 @@
     "eslint-friendly-formatter": "^4.0.1",
     "fs-extra": "^10.0.0",
     "gulp": "^4.0.2",
+    "husky": "^6.0.0",
+    "lint-staged": "^11.0.0",
     "rollup": "^2.52.3",
     "rollup-plugin-babel": "^4.4.0",
     "rollup-plugin-commonjs": "^10.1.0",
@@ -42,8 +44,5 @@
       "yarn lint",
       "git add"
     ]
-  },
-  "dependencies": {
-    "lint-staged": "^11.0.0"
   }
 }
